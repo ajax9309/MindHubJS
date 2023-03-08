@@ -1,7 +1,7 @@
-function capData(){
+function capData1(){
     let textSearch=document.getElementById('find').value
     let checkbox=Array.from(document.querySelectorAll('.checkbox:checked')).map(each=>each.value)
-    let filter= events.filter(each=>{
+    let filter= upceCat.filter(each=>{
         return (each.description.toLowerCase().includes(textSearch) || each.name.toLowerCase().includes(textSearch)) && (checkbox.length===0 || checkbox.includes(each.category))
     })
     //console.log(filter)
@@ -22,9 +22,9 @@ function capData(){
             eventCards.push(card)
           }
           
-          let eventcontainer = document.getElementById('cardscontainer')
+          let eventcontainer = document.getElementById('cardscontainer1')
           eventcontainer.innerHTML = eventCards.join('')
     }else{
-        notFound('#cardscontainer')
+        notFound('#cardscontainer1')
     }
 }

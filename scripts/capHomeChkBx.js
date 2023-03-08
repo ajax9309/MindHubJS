@@ -11,14 +11,6 @@ function capCheckBox(){
     }
     console.log(data)
 }
-// function searchfield(){
-//     let search=document.getElementById('find')
-//     let objSearch={
-//         [search.find]:find.value
-//     }
-//     console.log(objSearch)
-// }
-
 
 const handleForm=(event)=>{
     event.preventDefault()

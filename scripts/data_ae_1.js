@@ -180,4 +180,12 @@ data.events.forEach(each => {
     }    
 })
 
-
+function catNoRepeat(arraycat){
+let eventCat = [] 
+arraycat.forEach(each => {
+    if ( ! eventCat.includes(each.category) ) {
+       eventCat.push(each.category)
+    }    
+})
+return eventCat
+}
