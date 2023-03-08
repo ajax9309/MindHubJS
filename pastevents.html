@@ -52,36 +52,13 @@
     </header>
     <main class="flex-grow-1">
         <div class="d-flex flex-column text-center d-md-flex flex-md-row justify-content-md-evenly m-1">
-            <div class="d-flex p-2 flex-column align-content-center d-md-flex flex-md-row">
-                <div class="p-1 pe-3">
-                    <label for="cat1">Categoria1</label>
-                    <input class="ps-2" type="checkbox" name="cat1" id="cat1">
-                </div>
-                <div class="p-1 pe-3">
-                    <label for="cat2">Categoria2</label>
-                    <input class="ps-2" type="checkbox" name="cat2" id="cat2">
-                </div>
-                <div class="p-1 pe-3">
-                    <label for="cat3">Categoria3</label>
-                    <input type="checkbox" name="cat3" id="cat3">
-                </div>
-                <div class="p-1 pe-3">
-                    <label for="cat4">Categoria4</label>
-                    <input type="checkbox" name="cat4" id="cat4">
-                </div>
-                <div class="p-1 pe-3">
-                    <label for="cat5">Categoria5</label>
-                    <input type="checkbox" name="cat5" id="cat5">
-                </div>
+            <div id="categorycontainer" class="d-flex p-2 flex-column align-content-center d-md-flex flex-md-row">
             </div>
             <div class="d-inline-flex pt-2 justify-content-center">
                 <form class="ps-2" method="get">
-                    <label for="find">Search</label>
-                    <input class="flex-grow-1" type="text" name="find" id="find">
-                    <label for="search"></label>
-                    <button title="search" type="button" class="btn btn-dark" id="search"><i
-                            class="bi bi-search"></i></button>
+                    <input onkeyup="capData2()" class="form-control flex-grow-1" placeholder="Type a keyword" type="text" name="find" id="find">
                 </form>
+            </div>
             </div>
         </div>
 
@@ -111,6 +88,11 @@
 </script>
 <script src="./scripts/data_ae_1.js"></script>
 <script src="./scripts/dataPastEvents.js">
+</script>
+<script src="./scripts/genCheckBoxs2.js"></script>
+<script src="./scripts/eventFilter2.js">
+</script>
+<script src="./scripts/notFound.js">
 </script>
 
 </html>

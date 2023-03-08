@@ -2,6 +2,7 @@
 const events=data.events
 const date=data.currentDate
 let pastEvent = []
+let pastfilter = []
 function showPastEvents() {
     for (let each of events) {
       if (each.date < date) {
@@ -17,9 +18,12 @@ function showPastEvents() {
           </div>
         `
         pastEvent.push(card)
+        pastfilter.push(each)
       }
     }
     let eventcontainer2 = document.getElementById('cardscontainer2')
     eventcontainer2.innerHTML = pastEvent.join('')
+    let catPast=catNoRepeat(pastfilter)
+    console.log(catPast)
   }
   showPastEvents()

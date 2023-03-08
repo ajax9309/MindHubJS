@@ -6,7 +6,7 @@ let idQuery=param.get('id')
 
 function genCardDetails(id){
     return `
-    <div class="card m-3" style="max-width: 800px;">
+    <div class="card m-4 my-5" style="max-width: 950px;">
         <div class="row g-0">
             <div class="col-md-4">
                 <img id="imgdetails" src="${id.image}" class="rounded-start img-fluid" alt="${id.name}">
@@ -16,7 +16,13 @@ function genCardDetails(id){
                     <h5 class="card-title">${id.name}</h5>
                     <p class="card-text">${id.description}</p>
                 </div>
-            </div>
+                <div class="card-footer text-muted d-flex justify-content-between">
+                    <div><span>Price: ${id.price}</span></div>
+                    <div><span>Assistance: ${id.assistance}</span></div>
+                    <div><span>Place: ${id.place}</span></div>
+                    <div><span>Assistance: ${id.capacity}</span></div>
+                </div>
+            </div>        
         </div>
     </div>    
     `
