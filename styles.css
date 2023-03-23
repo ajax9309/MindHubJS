@@ -1,0 +1,26 @@
+.container-box{
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+/* .card{
+    opacity: 95%;
+
+} */
+
+.card-img{
+    height: 200px;
+    object-fit: cover;
+}
+#imagedetails{
+    height: 200px;
+    object-fit: cover;
+}
+
+body{
+    background-image: url(./img/bg2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+}

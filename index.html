@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/x-icon" href="./img/favicon.png">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+    <link rel="stylesheet" href="./styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+    <title>Amazing Events>Home</title>
+</head>
+
+<body class="container-box">
+    <header>
+        <nav class="navbar nav-pills navbar-expand-md bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="/index.html">
+                    <img src="./img/LogoAmazingEvents.png" alt="Logo" width="150"
+                        class="d-inline-block align-text-center img-fluid">
+                </a>
+                <button class="navbar-toggler btn btn-light bg-light" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span><i class="bi bi-list"></i></span>
+                </button>
+                <div class="collapse navbar-collapse justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav">
+                        <a class="nav-link active text-light" aria-current="page" href="/index.html">Home</a>
+                        <a class="nav-link text-light" href="./upcomingevent.html">Upcoming events</a>
+                        <a class="nav-link text-light" href="./pastevents.html">Past Events</a>
+                        <a class="nav-link text-light" href="./contact.html">Contact</a>
+                        <a class="nav-link text-light" href="./stats.html">Stats</a>
+                    </div>
+                </div>
+            </div>
+        </nav>
+        <div class="d-flex bg-dark-subtle justify-content-xl-evenly justify-content-lg-evenly justify-content-md-evenly justify-content-sm-evenly justify-content-evenly ">
+            <div>
+                <a href="./stats.html"><i class=" bi bi-caret-left-fill display-3 opacity-50 align-content-center"></i></a>
+            </div>
+            <div>
+                <h1 class="text-dark-emphasis display-3">Home</h1>
+            </div>
+            <div>
+                <a href="./upcomingevent.html"><i class="bi bi-caret-right-fill display-3 opacity-50"></i></a>
+            </div>
+        </div>
+    </header>
+    <main class="flex-grow-1">
+        <div class="d-flex flex-column text-center d-md-flex flex-md-row justify-content-md-evenly m-1">
+            <div id="categorycontainer" class="d-flex p-2 flex-column align-content-center d-md-flex flex-md-row">                
+            </div>
+            <div class="d-inline-flex pt-2 justify-content-center">
+                <form class="ps-2" method="get">
+                    <input onkeyup="capData()" class="form-control flex-grow-1" placeholder="Type a keyword" type="text" name="find" id="find">
+                </form>
+            </div>
+        </div>
+
+        <div id="cardscontainer" class="row text-secondary-emphasis w-100 d-flex align-content-center d-sm-flex flex-column flex-sm-row justify-content-sm-center">
+            
+        </div>
+    </main>
+
+    <footer>
+        <div class="display-6">
+            <div class="d-flex p-3 bg-dark-subtle justify-content-between align-content-center">
+                <div class="d-inline-flex">
+                    <span><i class="bi bi-instagram pe-4"></i></span>
+                    <span><i class="bi bi-facebook pe-4"></i></span>
+                    <span><i class="bi bi-whatsapp pe-4"></i></span>
+                </div>
+                <div>
+                    <h4 class="mb-0">FE05-TN</h4>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
+    </script>
+    <script src="./scripts/data_ae_1.js">
+    </script>
+    <script src="./scripts/dataIndex.js">
+    </script>
+    <script src="./scripts/genCheckBoxs.js">
+    </script>
+    <script src="./scripts/eventFilter.js">
+    </script>
+    <script src="./scripts/notFound.js">
+    </script>
+</body>
+
+
+</html>
